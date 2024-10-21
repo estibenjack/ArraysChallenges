@@ -31,7 +31,7 @@ public class ArrayPractical3 {
 	public static double calculateSmallestHeight(double[] heightsArray) {
 		double smallestHeight = heightsArray[0];
 		for (int i = 1; i < heightsArray.length; i++) {
-			if (i < smallestHeight) {
+			if (heightsArray[i] < smallestHeight) {
 				smallestHeight = heightsArray[i];
 			}
 		}
@@ -41,7 +41,7 @@ public class ArrayPractical3 {
 	public static double calculateTallestHeight(double[] heightsArray) {
 		double tallestHeight = heightsArray[0];
 		for (int i = 1; i < heightsArray.length; i++) {
-			if (i > tallestHeight) {
+			if (heightsArray[i] > tallestHeight) {
 				tallestHeight = heightsArray[i];
 			}
 		}
